@@ -16,6 +16,9 @@
             Posicao = null;
         }
 
-
+        public void incrementarQtemMovimento()
+        {
+            QntMovimentos++;
+        }
     }
 }
