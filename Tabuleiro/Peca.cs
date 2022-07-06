@@ -1,24 +1,29 @@
 ﻿namespace tabuleiro
 {
-    internal class Peca
+    abstract class Peca
     {
-        public Posicao Posicao { get; set; }
-        public Cor Cor { get; protected set; }
-        public int QntMovimentos  { get; protected set; }
-        public Tabuleiro Tab { get; protected set; }
+        internal int qteMovimentos;
+
+        public Posicao posicao { get; set; }
+        public Cor cor { get; protected set; }
+        public int qntMovimentos  { get; protected set; }
+        public Tabuleiro tab { get; protected set; }
 
 
         public Peca(Tabuleiro tab, Cor cor)
         {
-            Tab = tab;
-            Cor = cor;
-            QntMovimentos = 0;
-            Posicao = null;
+            this.tab = tab;
+            this.cor = cor;
+            this.qntMovimentos = 0;
+            this.posicao = null;
         }
 
         public void incrementarQtemMovimento()
         {
-            QntMovimentos++;
+            qntMovimentos++;
         }
+
+        public abstract bool[,] movimentosPossiveis();
+
     }
 }
