@@ -18,9 +18,14 @@
             this.posicao = null;
         }
 
-        public void incrementarQtemMovimento()
+        public void incrementarQteMovimento()
         {
             qntMovimentos++;
+        }
+
+        public void decrementarQteMovimento()
+        {
+            qntMovimentos--;
         }
 
         public bool existeMovimentosPossiveis()
