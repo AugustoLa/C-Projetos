@@ -1,6 +1,6 @@
 # Partida de xadrez
 
-Para rodar o jogo é necessario abrir o jogo no Visual Studio e rodar o arquivo, este jogo por enquanto só é rodavel via prompt de comando;
+Para rodar o jogo é necessario abrir o jogo no Visual Studio 2022 e clicar na ferramenta para executar o arquivo, este jogo por enquanto só funciona via prompt de comando;
 
 ## Como jogar:
 
